@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Informe y archivos comprimidos (no se suben al repositorio)
+informe_latex/
+*.pdf
+*.zip

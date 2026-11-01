@@ -1,0 +1,16 @@
+# ============================================================================
+# Programa de Ejemplo: Monitoreo Ambiental e Invernadero Inteligente (IoT)
+# Las líneas comentadas con '#' son ignoradas por el analizador léxico.
+# ============================================================================
+
+# 1. Regla básica de ventilación por temperatura
+WHEN temperatura > 28 THEN encender ventilador;
+
+# 2. Regla de seguridad ante detección de movimiento
+WHEN movimiento == TRUE THEN activar alarma;
+
+# 3. Condición combinada de temperatura y humedad con cláusula alternativa ELSE
+WHEN temperatura > 28.5 AND humedad_suelo < 40 THEN activar riego ELSE apagar riego;
+
+# 4. Uso de negación lógica NOT y agrupación con paréntesis ( )
+WHEN NOT (ventana_abierta == TRUE) AND (calidad_aire < 50 OR humo >= 10) THEN encender extractor;
